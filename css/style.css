@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*==================================================
+ 슬라이드
+==================================================*/
+.slide-wrap {display: none;}
+.slide-wrap .slide-view {}
+.slide-wrap .slide-view .slide-group {}
+.slide-wrap .slide-view .slide-group .slide-box {}
+.slide-wrap .slide-view .slide-group .slide-box .photo {}
+.slide-wrap .slide-view .slide-group .slide-box .photo a.pc-photo {}
+.slide-wrap .slide-view .slide-group .slide-box .photo a.pc-photo img {width: 100%;}
