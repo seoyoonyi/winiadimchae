@@ -1,12 +1,64 @@
 @charset "utf-8";
 
+
+/* 버튼 공통 디자인 */
+.more-btn {display: inline-block; text-align: center; vertical-align: middle; }
+/* 버튼 사이즈 */
+.more-btn.medium { height : 48px; line-height: 48px; padding: 0 16px; }
+/* 버튼 컬러 */
+.more-btn.color-black {box-shadow: 0 0 0 1px #222; color: #222;}
+
+
 /*==================================================
- 슬라이드
+ 메인 슬라이드
 ==================================================*/
-.slide-wrap {display: none;}
-.slide-wrap .slide-view {}
-.slide-wrap .slide-view .slide-group {}
-.slide-wrap .slide-view .slide-group .slide-box {}
-.slide-wrap .slide-view .slide-group .slide-box .photo {}
-.slide-wrap .slide-view .slide-group .slide-box .photo a.pc-photo {}
-.slide-wrap .slide-view .slide-group .slide-box .photo a.pc-photo img {width: 100%;}
+.slide-wrap {width: 100%;}
+.slide-wrap .slide-view {width: 100%; overflow: hidden;}
+.slide-wrap .slide-view .slide-group {display: flex; width: 600%;}
+.slide-wrap .slide-view .slide-group .slide-box {position: relative; width: 16.66666%;}
+.slide-wrap .slide-view .slide-group .slide-box .container {height: 100%; flex-direction: column; align-items: flex-start; justify-content: center;}
+.slide-wrap .slide-view .slide-group .slide-box .photo .pc-photo img {width: 100%; object-fit: contain; object-position: center;}
+.slide-wrap .slide-view .slide-group .slide-box .copy { position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #222; }
+.slide-wrap .slide-view .slide-group .slide-box .copy .small-txt {font-weight: bold; font-size: 1.5rem; line-height: 1; letter-spacing: -0.0375rem;}
+.slide-wrap .slide-view .slide-group .slide-box .copy .big-txt { margin-top: 30px; font-weight: bold; font-size: 3.75rem; line-height: 1.18; letter-spacing: -0.1875rem;}
+.slide-wrap .slide-view .slide-group .slide-box .copy .more-btn {margin-top: 60px; min-width: 170px; border-radius:  50px; font-weight: bold; }
+
+
+
+/*==================================================
+  메인 모듈 디자인
+==================================================*/
+.module-wrap {width: 100%; overflow: hidden;}
+.module-wrap .tit-group .tab-list {display: flex; justify-content: center; margin-top: 30px;}
+.module-wrap .module-group { position: relative; left: 0; top: 0; width: 400%; display: flex; padding-top: 40px; flex-wrap: wrap;}
+.module-wrap .module-group .module-box {width: 25%; outline: 1px solid red;}
+.module-wrap .module-group .module-box .container {display: block; flex-direction: initial; justify-content: initial; align-items: initial;}
+
+.module-wrap .module-group .module-box .container ul { display: flex; width: 100%; flex-flow: row wrap; }
+.module-wrap .module-group .module-box:first-child.container ul {gap: 25px;}
+.module-wrap .module-group .module-box:nth-child(3) .container ul { position: relative; flex-flow: column wrap; align-content: space-between; align-items: initial;}
+
+
+
+.module-wrap .module-group .module-box .new-list li {width: calc(100%/3 - 16.66667px);}
+.module-wrap .module-group .module-box .new-list li a {margin: 0 auto; padding: 10px 10px 20px; background-color: #f3f3f3; text-align: center;}
+.module-wrap .module-group .module-box .new-list li a .photo img {margin: 0 auto;}
+
+.module-wrap .module-group .module-box .my-frenchrecipe {width: 100%;}
+.module-wrap .module-group .module-box .my-frenchrecipe img {width: 100%;}
+
+.module-wrap .module-group .module-box .honeymoon-list {height: 660px;}
+.module-wrap .module-group .module-box .honeymoon-list li:first-child {position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+.module-wrap .module-group .module-box .honeymoon-list li:nth-child(2n) {margin-bottom: 25px;}
+.module-wrap .module-group .module-box .gift-list {}
+.module-wrap .module-group .module-box .gift-list li {}
+.module-wrap .module-group .module-box .gift-list li a {}
+
+
+
+
+
+
+
+
+section .pc-image img {width: 10%;}
