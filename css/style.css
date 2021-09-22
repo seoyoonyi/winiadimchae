@@ -29,32 +29,35 @@
   메인 모듈 디자인
 ==================================================*/
 .module-wrap {width: 100%; overflow: hidden;}
-.module-wrap .tit-group .tab-list {display: flex; justify-content: center; margin-top: 30px;}
-.module-wrap .module-group { position: relative; left: 0; top: 0; width: 400%; display: flex; padding-top: 40px; flex-wrap: wrap;}
-.module-wrap .module-group .module-box {width: 25%; outline: 1px solid red;}
-.module-wrap .module-group .module-box .container {display: block; flex-direction: initial; justify-content: initial; align-items: initial;}
-
-.module-wrap .module-group .module-box .container ul { display: flex; width: 100%; flex-flow: row wrap; }
-.module-wrap .module-group .module-box:first-child.container ul {gap: 25px;}
-.module-wrap .module-group .module-box:nth-child(3) .container ul { position: relative; flex-flow: column wrap; align-content: space-between; align-items: initial;}
-
-
-
-.module-wrap .module-group .module-box .new-list li {width: calc(100%/3 - 16.66667px);}
-.module-wrap .module-group .module-box .new-list li a {margin: 0 auto; padding: 10px 10px 20px; background-color: #f3f3f3; text-align: center;}
-.module-wrap .module-group .module-box .new-list li a .photo img {margin: 0 auto;}
-
-.module-wrap .module-group .module-box .my-frenchrecipe {width: 100%;}
-.module-wrap .module-group .module-box .my-frenchrecipe img {width: 100%;}
-
-.module-wrap .module-group .module-box .honeymoon-list {height: 660px;}
-.module-wrap .module-group .module-box .honeymoon-list li:first-child {position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
-.module-wrap .module-group .module-box .honeymoon-list li:nth-child(2n) {margin-bottom: 25px;}
-.module-wrap .module-group .module-box .gift-list {}
-.module-wrap .module-group .module-box .gift-list li {}
-.module-wrap .module-group .module-box .gift-list li a {}
+.module-wrap .module-group {display: flex; width: 400%;}
+.module-wrap .module-group .module-box {position: relative; width: 25%;}
+.module-wrap .module-group .module-box .container {flex-wrap: wrap; gap: 25px; }
+.module-wrap .module-group .module-box .new-list li {width: calc(100%/3 - 16.66667px); background-color: #f3f3f3;}
+.module-wrap .module-group .module-box .new-list li a {padding: 10px 10px 52px; text-align: center;}
+.module-wrap .module-group .module-box .new-list li a .photo {height: 204px;}
+.module-wrap .module-group .module-box .new-list li a .photo img {height: 100%; margin: 0 auto;}
+.module-wrap .module-group .module-box .honeymoon-list {height: 660px; justify-content: space-between;align-content: space-between; flex-direction: column; gap: initial;}
+.module-wrap .module-group .module-box .honeymoon-list li~li {width: 330px; height: calc(100%/2 - 12.5px);}
+.module-wrap .module-group .module-box .honeymoon-list li:first-child {position: absolute; top: 0; left: 50%; max-width: 690px; transform: translateX(-50%);}
+.module-wrap .module-group .module-box .honeymoon-list li a {max-width: 100%; height: 100%;}
+.module-wrap .module-group .module-box .honeymoon-list li a .photo { height: 100%; overflow: hidden;}
+.module-wrap .module-group .module-box .honeymoon-list li a .photo img {width: 100%; height: 100%; object-fit: cover;}
 
 
+
+/*==================================================
+  인기 추천 가전
+==================================================*/
+.popular-wrap {max-height: 896px; padding: 60px 0 100px; background: url('../image/bg_main_popular.jpg') 50% 50%/cover;}
+.popular-wrap .container {}
+.popular-wrap .popular-view {width: 100%;}
+.popular-wrap .popular-view .popular-group {display: flex; width: 300%;}
+.popular-wrap .popular-view .popular-group .popular-box {width: 33.33333%;}
+.popular-wrap .popular-view .popular-group .popular-box ul {padding: 0 15px; gap: 55px;}
+.popular-wrap .popular-view .popular-group .popular-box ul li { width: calc(100%/3 - 36.666667px); padding: 10px 10px 40px; text-align: center; background-color: #f3f3f3;}
+.popular-wrap .popular-view .popular-group .popular-box ul li {}
+.popular-wrap .popular-view .popular-group .popular-box ul li .photo {display: flex; width: 400px; height: 400px; align-items: center;}
+.popular-wrap .popular-view .popular-group .popular-box ul li .photo img {max-width: 300px; max-height: 300px; margin: 0 auto;}
 
 
 

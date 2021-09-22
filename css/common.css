@@ -3,7 +3,6 @@
 
 
 
-/* 폰트 다시 가져오기기기!!!!! */
 
 
 /*==================================================
@@ -41,22 +40,29 @@ img { border: 0; }
 /*==================================================
  공통디자인
 ==================================================*/
-.container { display: flex; max-width: 1400px; margin: 0 auto; justify-content: space-between; align-items: center; } 
+.container { display: flex; max-width: 1400px; margin: 0 auto;} 
 .hide { z-index: -1; position: absolute; top: -1px; left: -1px; width: 1px; height: 1px; font-size: 0; line-height: 0; overflow: hidden; visibility: hidden; } 
 .icon {background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+
 section {margin-top: 100px;}
-section .container {flex-direction: column;}
-section .tit-group .tit {font-size: 1.75rem; text-align: center; line-height: 1; font-weight: 700; letter-spacing: -0.0625rem; color: #222;}
-section:not(.module-wrap) .tit-group .tab-list {display: flex; justify-content: center; margin-top: 30px;}
-section .tit-group .tab-list li a { margin: 0 20px; padding: 10px 0 12px; font-size: 1.125rem; line-height: 1; letter-spacing: -0.025rem; color: #999;}
+/* 목록디자인 */
+section .tit-group {margin-bottom: 40px;}
+section .tit-group .tit {margin-bottom: 30px; font-size: 1.75rem; text-align: center; line-height: 1; font-weight: 700; letter-spacing: -0.0625rem; color: #222;}
+section .tit-group .tab-list {display: flex; justify-content: center;}
+section .tit-group .tab-list li { margin: 0 20px; padding: 10px 0 12px;}
+section .tit-group .tab-list li a {font-size: 1.125rem; line-height: 1; letter-spacing: -0.025rem; color: #999;}
 
-
+section .desc {margin-top: 10px;}
+section .desc .tit {height: 25px; font-size: 1.25rem; font-weight: 700; line-height: 1; letter-spacing:-0.07rem; color: #222;}
+section .desc .code {margin-top: 10px; font-size: 0.75rem; line-height: 1; letter-spacing: -0.019rem; color: #666;}
+section .desc .price { margin-top: 20px; font-weight: 700; line-height: 1; letter-spacing: -0.025rem; color: #222;}
+section .desc .more-btn {height: 38px; margin-top: 40px; padding: 11px 40px 11px 0; font-weight: 700; background: url(../image/icon/ico_half_arr.svg) no-repeat right center;}
 
 /*==================================================
  헤더
 ==================================================*/
 header { width: 100%; border-bottom: 1px solid #e0e0e0; background-color: #fff; } 
-header .container {height: 90px;}
+header .container {height: 90px; justify-content: space-between; align-items: center;}
 header .logo a { padding: 20px 0; } 
 header .logo a img { width: 141px; } 
 header .pc-gnb { display: flex; width: 88%; max-width: 1194px; justify-content: space-between; } 
