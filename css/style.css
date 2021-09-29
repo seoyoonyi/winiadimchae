@@ -196,6 +196,7 @@
     .popular-wrap {background: url(../image/bg_main_popular_m.jpg) left top/cover;}
     .popular-wrap .popular-view .popular-group {padding: 39.083vw 0 11.111vw;}
     .popular-wrap .popular-view .popular-group .popular-box ul {width: auto; padding: 0 12.5vw 8.333vw; flex-wrap: nowrap;}
-    .popular-wrap .popular-view .popular-group .popular-box ul li {width: 100%; margin: 0;}
-    
+    .popular-wrap .popular-view .popular-group .popular-box ul li {width: 100%; margin: 0; flex-shrink: 0;}
+    .popular-wrap .popular-view .popular-group .popular-box ul li .photo {height: auto;}
+    .popular-wrap .popular-view .popular-group .popular-box ul li .photo img {max-height: 63.611vw;}
 } 
