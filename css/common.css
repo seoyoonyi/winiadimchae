@@ -188,13 +188,13 @@ footer .bottom select.family-site:focus { outline: none; }
     footer .top .site-map-group>li:first-child .sub-list {display: none;}
     footer .top .site-map-group>li~li {padding-left: 20px; border-left: none; border-top: 1px solid #e0e0e0;}
     footer .top .site-map-group li .main-list {display: flex; width: 100%; align-items: center;}
-    footer .top .site-map-group li .main-list>h2 {padding: 15px 0; font-size: 1.25vw;}
+    footer .top .site-map-group li .main-list>h2 {padding: 15px 0; font-size: 15px;}
     footer .top .site-map-group li .main-list>.main-list-btn {display: block; width: 10px; height: 5px; margin-left: auto; background: transparent url(../image/icon/arr_mo_gnb.svg) no-repeat 50% 50%/contain;}
     footer .top .site-map-group li .sub-list {display: none; width: 100%; margin-top: 7px;}
     footer .top .site-map-group li .sub-list li a {font-size: 12px;}
     footer .top .site-map-group li.cs-text-box {padding-top: 30px;}
     footer .top .site-map-group li.cs-text-box .main-list h2 {padding: 0 0; font-size: 10px; font-weight: normal;}
-    footer .top .site-map-group li.cs-text-box strong {margin-top: 0; font-size: 1.4167vw;}
+    footer .top .site-map-group li.cs-text-box strong {margin-top: 6px; font-size: 17px;}
     footer .top .site-map-group li.cs-text-box .cs-day {display: flex; margin-top: 0; flex-wrap: wrap; }
     footer .top .site-map-group li.cs-text-box .cs-day p {width: 50%;  font-size: 10px;}
     footer .top .site-map-group li.cs-text-box .cs-day p:nth-child(2) {order: 3;}
