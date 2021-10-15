@@ -29,7 +29,9 @@ blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; } 
 table { border-collapse: collapse; border-spacing: 0; } 
 /* 추가 Reset CSS */
+* { font-family: 'Noto Sans KR','돋움', Dotum, '굴림', Gulim, Verdana, Arial, sans-serif;} 
 body { font-family: 'Noto Sans KR','돋움', Dotum, '굴림', Gulim, Verdana, Arial, sans-serif; font-weight: normal; color: #555; word-break: keep-all; line-height: 1.5; } 
+button, input, textarea { font-family: 'Noto Sans KR','돋움', Dotum, '굴림', Gulim, Verdana, Arial, sans-serif;} 
 a { text-decoration: none; color:#222; } 
 img { border: 0; } 
 
@@ -44,7 +46,7 @@ img { border: 0; }
 .slide-btn { position:relative; height: 38px; margin-top: 40px; padding: 11px 40px 11px 0; font-weight: 700; } 
 .slide-btn.medium { height : 48px; line-height: 48px; padding: 0 16px; } 
 .slide-btn.color-black { box-shadow: 0 0 0 1px #222; color: #222; } 
-.more-btn { position:relative; height: 38px; margin-top: 40px; padding: 11px 40px 11px 0; font-weight: 700; background: url(../image/icon/ico_half_arr.svg) no-repeat right 60%/32px 11px; overflow: hidden; } 
+.more-btn { position:relative; height: 45px; margin-top: 40px; padding: 11px 40px 11px 0; font-weight: 700; background: url(../image/icon/ico_half_arr.svg) no-repeat right 60%/32px 11px; overflow: hidden; } 
 .more-btn.medium { height : 48px; line-height: 48px; padding: 0 16px; } 
 .more-btn.color-black { box-shadow: 0 0 0 1px #222; color: #222; } 
 .more-btn::before { position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background-color: #222; content: ' '; transform: translateX(-110%); transition: transform .5s ease-in-out; } 
@@ -64,10 +66,8 @@ section .tit-group .tab-list li a { display: inline; font-size: 1.125rem; line-h
 section .tit-group .tab-list li a:hover, section .tit-group .tab-list li a:focus { color: #222; } 
 section.product-wrap .tit-group .tab-list li a { color: #fff; } 
 section .tit-group .tab-list li.on a { position: relative; font-weight: 700; color: #222; } 
-section .tit-group .tab-list li.on a::after {content: ' '; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; margin-bottom: -10px; background-color: #222;} 
+section .tit-group .tab-list li.on a::after {content: ' '; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; margin-bottom: -10px; background-color: red;}
 section.product-wrap .tit-group .tab-list li.on a { position: relative; font-weight: 700; color: #fff; } 
-section.product-wrap .tit-group .tab-list li.on a::after {content: ' '; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; margin-bottom: -10px; background-color: #fff;} 
-
 section .desc { margin-top: 10px; } 
 section .desc .tit { height: 25px; font-size: 1.25rem; font-weight: 700; line-height: 1; letter-spacing: -0.5px; color: #222; } 
 section .desc .code { margin-top: 10px; font-size: 0.75rem; line-height: 1; letter-spacing: -0.3px; color: #666; } 

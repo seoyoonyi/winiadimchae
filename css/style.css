@@ -72,8 +72,8 @@
 .product-wrap .product-group .product-box .copy-area { position: absolute; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-content: center; justify-content: center; padding-top: calc( 60px + 106px); padding-bottom: 117px; color: #eee; text-align: center; } 
 .product-wrap .product-group .product-box .copy-area .title { font-size: 3.375rem; font-weight: 500; line-height: 68px; letter-spacing: -1.35px; } 
 .product-wrap .product-group .product-box .copy-area .sub-title { margin-top: 40px; font-size: 1.25rem; line-height: 1.5; letter-spacing: -0.5px; } 
-.product-wrap .product-group .product-box .copy-area .arr-btn { position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); width: 112px; height: 17px; margin: 0 auto; background-image: url(../image/icon/ico_half_arr_w.svg); background-size: 112px auto; } 
-
+.product-wrap .product-group .product-box .copy-area .arr-btn { position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); width: 112px; height: 17px; margin: 0 auto; background-image: url(../image/icon/ico_half_arr_w.svg); background-size: 112px auto; transition: left .4s ease-out;} 
+.product-wrap .product-group .product-box .copy-area .arr-btn:hover {left:51%;}
 /*==================================================
  소셜위니아
 ==================================================*/

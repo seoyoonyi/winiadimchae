@@ -36,7 +36,7 @@ $(function () {
       },
     });
 
-    $(sec + '>.tit-group>ul>li').on('click', function(e){
+    $(sec + '>.tit-group>ul>li').on('click', function (e) {
       e.preventDefault();
       var index = $(this).index();
       secSwiper.slideTo(index);
