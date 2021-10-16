@@ -338,13 +338,53 @@
                             <li><a href="#">위니아e샵</a></li>
                             <li><a href="#">위니아딤채STAY</a></li>
                         </ul>
-                        <a href="#"><span class="mypage icon"><span class="hide">마이</span></span></a>
-                        <a href="#"><span class="search icon"><span class="hide">검색</span></span></a>
+                        <a href="#">
+                            <span class="mypage icon">
+                                <span class="hide">마이</span>
+                            </span>
+                        </a>
+
+                        <button type="submit" class="search-btn">
+                            <span class="search icon">
+                                <span class="hide">마이</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="search-group">
+                        <div class="search-modal">
+                            <form action="#">
+                                <input type="search" class="search-box" placeholder="검색어를 입력하세요.">
+                                <div class="search-btn-group">
+                                    <button type="submit" class="clear-btn">
+                                        <span class="clear icon">
+                                            <span class="hide">
+                                                클리어
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button type="submit" class="search-btn">
+                                        <span class="search icon">
+                                            <span class="hide">
+                                                검색
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                            <button type="submit" class="close-btn">
+                                <span class="close icon">
+                                    <span class="hide">
+                                        닫기
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
+            <div class="search-bg"></div>
             <!-- 메인 슬라이드 -->
             <div class="slide-wrap">
                 <div class="slide-view swiper">
@@ -465,6 +505,11 @@
                         <button type="submit" class="btn prev swiper-button-prev"></button>
                     </div>
                     <div class="swiper-pagination">
+                    </div>
+                    <div class="swiper-btn-group">
+                        <button class="swiper-play-btn">
+                            <span class="hide">play</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -630,7 +675,6 @@
                 </ul>
             </section>
             <!-- 인기 추천 가전 -->
-            <!-- js 넣어야한다!!!!!!!!! -->
             <section class="popular-wrap swiper">
                 <div class="tit-group">
                     <h3 class="tit">인기 추천 가전</h3>
@@ -1082,7 +1126,7 @@
                                 </div>
                             </li>
                             <li class="right">
-                                <div class="main-box" style="display: none;">
+                                <div class="main-box">
                                     <div class="photo">
                                         <img src="./image/recommend-1.png" alt="[딤채쿡 요리 비책: 딤합총서] 초당옥수수 토마토 밥">
                                     </div>

@@ -1,5 +1,8 @@
 @charset "utf-8";
-
+/*==================================================
+ 메인 - 검색창 모달 어두운 배경
+==================================================*/
+.search-bg {z-index: 9999; display: none; position: absolute; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7);}
 
 /*==================================================
  메인 슬라이드
@@ -88,24 +91,25 @@
 .social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li a .photo { position: relative; overflow: hidden; border-radius: 20px; background-color: #003b70; } 
 .social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li a .photo img { width: 100%; } 
 .social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li a .photo .more-image { z-index: 999; position: absolute; top: 50%; left: 50%; width: 101px; height: 101px; opacity: 0; visibility: hidden; transform: translate(-50%, -50%); box-shadow: 0 0 0 1px white; border-radius: 50%; background-image: url(../image/icon/icon_page_view.svg); background-size: 36px 36px; transition: opacity 0.3s ease-out; } 
-.social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li a .photo:hover img { opacity: 0.5; } 
-.social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li a .photo:hover .more-image { opacity: 1; visibility: visible; } 
+.social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list, .review-list) li a .photo:hover img { opacity: 0.5; } 
+.social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list, .review-list) li a .photo:hover .more-image { opacity: 1; visibility: visible; } 
 .social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li .desc { margin-top: 35px; } 
 .social-wrap .social-group .social-box ul li .desc .tit { font-size: 1.75rem; line-height: 1.36; letter-spacing: -0.7px; } 
 .social-wrap .social-group .social-box ul li .desc .text { width: 100%; margin-top: 25px; font-size: 1.125rem; color: #666; letter-spacing: -0.45px; } 
-.social-wrap .social-group .social-box ul li .desc .more-btn { display: none; } 
+.social-wrap .social-group .social-box ul:not(.recommend-list, .mo-recommend-list) li .desc .more-btn { display: none; } 
 .social-wrap .social-group .social-box ul li .desc .tit.ellipsis { height: auto; } 
 .social-wrap .social-group .social-box ul li .desc .text.ellipsis { height: auto; } 
-.social-wrap .social-group .social-box .recommend-list { display: flex; width: 100%; text-align: left;} 
+.social-wrap .social-group .social-box .recommend-list { display: flex; width: 100%; height: 100%; text-align: left;} 
 .social-wrap .social-group .social-box .recommend-list .left .thumb-box { position: relative; width: 243px; margin: 0 20px; border-radius: 20px; background-color: #003b70; overflow: hidden; } 
-.social-wrap .social-group .social-box ul.recommend-list .left .thumb-box img { width: 100%; } 
-.social-wrap .social-group .social-box ul.recommend-list .left .thumb-box .more-image { z-index: 999; position: absolute; top: 50%; left: 50%; width: 123px; height: 17px; opacity: 0; visibility: hidden; transform: translate(-50%, -50%); background-image: url(../image/icon/ico_half_arr_w.svg); background-size: 112px auto; transition: opacity 0.3s ease-out; } 
-.social-wrap .social-group .social-box ul.recommend-list .left .thumb-box:hover img { opacity: 0.5; } 
-.social-wrap .social-group .social-box ul.recommend-list .left .thumb-box:hover .more-image { opacity: 1; visibility: visible; } 
+.social-wrap .social-group .social-box .recommend-list .left .thumb-box img { width: 100%; } 
+.social-wrap .social-group .social-box .recommend-list .left .thumb-box .more-image { z-index: 999; position: absolute; top: 50%; left: 50%; width: 123px; height: 17px; opacity: 0; visibility: hidden; transform: translate(-50%, -50%); background-image: url(../image/icon/ico_half_arr_w.svg); background-size: 112px auto; transition: opacity 0.3s ease-out; } 
+.social-wrap .social-group .social-box .recommend-list .left .thumb-box:hover img { opacity: 0.5; } 
+.social-wrap .social-group .social-box .recommend-list .left .thumb-box:hover .more-image { opacity: 1; visibility: visible; } 
 .social-wrap .social-group .social-box .recommend-list .left .thumb-box:nth-child(2) { margin-top: 25px; } 
 .social-wrap .social-group .social-box .recommend-list .left .thumb-box img { width: 100%; height: 100%; object-fit: cover; } 
-.social-wrap .social-group .social-box .recommend-list .right { position: relative; width: 100%; } 
-.social-wrap .social-group .social-box .recommend-list .right .main-box { position: absolute; display: flex; align-items: center; } 
+.social-wrap .social-group .social-box .recommend-list .right { width: 100%; } 
+.social-wrap .social-group .social-box .recommend-list .right .main-box { display: flex; align-items: center; }
+.social-wrap .social-group .social-box .recommend-list .right .main-box:last-child {display: none;} 
 .social-wrap .social-group .social-box .recommend-list .right .main-box .photo { overflow: hidden; border-radius: 20px; } 
 .social-wrap .social-group .social-box .recommend-list .right .main-box .desc { margin-left: 60px; padding-top: 27px; } 
 .social-wrap .social-group .social-box .recommend-list .right .main-box .desc .tit { height: auto; font-size: 1.625rem; letter-spacing: -0.7px; line-height: initial; } 
@@ -157,9 +161,13 @@
  .product-wrap .product-group .product-box .copy-area .sub-title { margin-top: 2.857vw; font-size: 1.429vw; } 
  }
 
+ @media (max-width: 1045px){
+    .social-wrap .social-group .social-box .recommend-list .right .main-box {flex-wrap: wrap;}
+    .social-wrap .social-group .social-box .recommend-list .right .main-box .photo {margin-left: 60px;}
+    .social-wrap .social-group .social-box .recommend-list .right .main-box { height: 100%;}
+ }
+
 @media (max-width: 1024px){
-
-
  .popular-wrap .popular-group .popular-box ul li .photo { width: 28.571vw; height: 28.571vw; } 
  .popular-wrap .popular-group .popular-box ul { gap: 25px; } 
  .popular-wrap .popular-group .popular-box ul li { width: calc(100%/3 - 16.66667px); } 
