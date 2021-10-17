@@ -21,16 +21,48 @@
                 </h1>
                 <div class="mo-gnb">
                     <div class="top">
-                        <a href="#" class="mo-icon">
-                            <span class="mo-search icon">
-                                <span class="hide">검색</span>
-                            </span>
-                        </a>
-                        <button class="mo-icon">
-                            <span class="mo-menu-btn icon">
-                                <span class="hide">menu</span>
+                        <div class="top-list">
+                            <button type="submit" class="mo-icon search-btn">
+                                <span class="mo-search icon">
+                                    <span class="hide">검색</span>
+                                </span>
+                            </button>
+                            <button class="mo-icon menu-btn">
+                                <span class="mo-menu-btn icon mo-menu">
+                                    <span class="hide">menu</span>
+                                </span>
+                            </button>
+                        </div>
+                        <button type="submit" class="close-btn">
+                            <span class="close icon">
+                                <span class="hide">
+                                    닫기
+                                </span>
                             </span>
                         </button>
+                    </div>
+                    <div class="search-group">
+                        <div class="search-modal container">
+                            <form action="#">
+                                <input type="search" class="search-box" placeholder="검색어를 입력하세요.">
+                                <div class="search-btn-group">
+                                    <button type="submit" class="clear-btn">
+                                        <span class="clear icon">
+                                            <span class="hide">
+                                                클리어
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button type="submit" class="search-btn">
+                                        <span class="search icon">
+                                            <span class="hide">
+                                                검색
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <nav class="navigation">
                         <div class="login-menu">
@@ -346,7 +378,7 @@
 
                         <button type="submit" class="search-btn">
                             <span class="search icon">
-                                <span class="hide">마이</span>
+                                <span class="hide">검색</span>
                             </span>
                         </button>
                     </div>
@@ -504,12 +536,14 @@
                         <button type="submit" class="btn next swiper-button-next"></button>
                         <button type="submit" class="btn prev swiper-button-prev"></button>
                     </div>
-                    <div class="swiper-pagination">
-                    </div>
-                    <div class="swiper-btn-group">
-                        <button class="swiper-play-btn">
-                            <span class="hide">play</span>
-                        </button>
+                    <div class="control-box">
+                        <div class="swiper-pagination">
+                        </div>
+                        <div class="swiper-btn-group">
+                            <button class="swiper-play-btn">
+                                <span class="hide">play</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -686,106 +720,112 @@
                 </div>
                 <ul class="popular-group swiper-wrapper">
                     <li class="popular-box swiper-slide">
-                        <ul class="pop-kitchen-list container">
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-kitchen-1.png" alt="딤채 스탠드형 551L">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">딤채 스탠드형 551L</h4>
-                                    <p class="price">&nbsp;</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-kitchen-2.png" alt="딤채 스탠드형 418L">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">딤채 스탠드형 418L</h4>
-                                    <p class="price">&nbsp;</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-kitchen-3.png" alt="위니아 보르도 냉장고">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 보르도 냉장고</h4>
-                                    <p class="price">&nbsp;</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="inner">
+                            <ul class="pop-kitchen-list container">
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-kitchen-1.png" alt="딤채 스탠드형 551L">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">딤채 스탠드형 551L</h4>
+                                        <p class="price">&nbsp;</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-kitchen-2.png" alt="딤채 스탠드형 418L">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">딤채 스탠드형 418L</h4>
+                                        <p class="price">&nbsp;</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-kitchen-3.png" alt="위니아 보르도 냉장고">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 보르도 냉장고</h4>
+                                        <p class="price">&nbsp;</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="popular-box swiper-slide">
-                        <ul class="pop-product-list container">
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-life-1.png" alt="위니아 스마트 패키지 (세탁기 12kg + 건조기 10kg)">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 스마트 패키지 (세탁기 12kg + 건조기 10kg)</h4>
-                                    <p class="price">&nbsp;</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-life-2.png" alt="위니아 드럼 세탁기 23kg">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 드럼 세탁기 23kg</h4>
-                                    <p class="price">1,599,000원</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-life-2.png" alt="위니아 드럼 세탁기 23kg">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 드럼 세탁기 23kg</h4>
-                                    <p class="price">1,499,000원</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="inner">
+                            <ul class="pop-product-list container">
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-life-1.png" alt="위니아 스마트 패키지 (세탁기 12kg + 건조기 10kg)">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 스마트 패키지 (세탁기 12kg + 건조기 10kg)</h4>
+                                        <p class="price">&nbsp;</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-life-2.png" alt="위니아 드럼 세탁기 23kg">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 드럼 세탁기 23kg</h4>
+                                        <p class="price">1,599,000원</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-life-2.png" alt="위니아 드럼 세탁기 23kg">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 드럼 세탁기 23kg</h4>
+                                        <p class="price">1,499,000원</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="popular-box swiper-slide">
-                        <ul class="pop-air-list container">
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-air-1.png" alt="위니아 에어컨 스탠드형 56.28㎡">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 에어컨 스탠드형 56.28㎡</h4>
-                                    <p class="price">&nbsp;</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-air-2.png" alt="위니아 공기청정기 100.2㎡">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 공기청정기 100.2㎡</h4>
-                                    <p class="price">739,000원</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="photo">
-                                    <img src="./image/popular-air-3.png" alt="위니아 공기청정기 100.2㎡">
-                                </div>
-                                <div class="desc">
-                                    <h4 class="tit">위니아 공기청정기 100.2㎡</h4>
-                                    <p class="price">759,000원</p>
-                                    <a href="#" class="more-btn btn">자세히보기</a>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="inner">
+                            <ul class="pop-air-list container">
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-air-1.png" alt="위니아 에어컨 스탠드형 56.28㎡">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 에어컨 스탠드형 56.28㎡</h4>
+                                        <p class="price">&nbsp;</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-air-2.png" alt="위니아 공기청정기 100.2㎡">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 공기청정기 100.2㎡</h4>
+                                        <p class="price">739,000원</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="photo">
+                                        <img src="./image/popular-air-3.png" alt="위니아 공기청정기 100.2㎡">
+                                    </div>
+                                    <div class="desc">
+                                        <h4 class="tit">위니아 공기청정기 100.2㎡</h4>
+                                        <p class="price">759,000원</p>
+                                        <a href="#" class="more-btn btn">자세히보기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </section>
@@ -1131,7 +1171,7 @@
                                         <img src="./image/recommend-1.png" alt="[딤채쿡 요리 비책: 딤합총서] 초당옥수수 토마토 밥">
                                     </div>
                                     <div class="desc">
-                                        <h4 class="tit">[딤채쿡 요리 비책: 딤합총서] 초당옥수수 토마토 밥</h4>
+                                        <h4 class="tit">[딤채쿡 요리 비책: 딤합총서] <br> 초당옥수수 토마토 밥</h4>
                                         <p class="text">문제: 초당옥수수와 토마토로 밥을 지으면?<br>정답: 귀여운데 맛있기까지 함</p>
                                         <p class="intro-text">딤채쿡으로 만드는<br> 건강한 레시피를 소개합니다!</p>
                                         <a href="#" class="more-btn btn icon">자세히 보기</a>
